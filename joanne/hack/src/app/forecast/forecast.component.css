@@ -1,30 +1,47 @@
-@component {
-    background-color: aliceblue;
+/* .main {
+    position: absolute;
     width: 100%;
-}
+} */
 
 .week {
-    margin-top: 50px;
-    width: 80%;
-    /* overflow: auto; */
-    position: relative;
-    align-items: stretch;
-    margin-left: auto;
-    margin-right: auto;
-    display: table;
+    top: 280px;
+    width: 100%;
+    /* height: 510px; */
+    position: absolute;
+    /* background-color: #eee5d0; */
+    text-align: center;
+    padding: 0;
 }
 
 span {
-        background-color: blue;
-        display: table-cell;
-        display: inline-block;
-        text-align: center;
-        width: 14%;
-        top: 30%;
-        position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 12%;
+    color: #704e17;
+    position: relative;
+    padding: 20px;
+    background-color: #dbcfb3;
+    /* box-shadow: 7px 7px rgb(222, 224, 222); */
+    }
+
+    span.selected {
+        border-radius: 10px;
+        border-bottom: none;
+        /* border-top: 7px solid #ddc7aa; */
+        background-color: #eee5d0;
+        border-left: 3px dashed #e2d8c0;    
+        border-right: 3px dashed #e2d8c0;    
+        border-top: 3px dashed #e2d8c0;    
+        border-bottom-left-radius:0;
+        border-bottom-right-radius:0;
+        /* box-sizing: border-box; */
     }
 
 .weather-info {
     background-color: blue;
     position: relative;
+    width: 99%;
+    top: 216px;
+    height: 500px;
+    margin: auto;
 }

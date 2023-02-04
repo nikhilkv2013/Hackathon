@@ -1,12 +1,15 @@
-<p>forecast works!</p>
+<div class="main">
+  <div class="week">
+    <span [class.selected]="curDay === 1" (click)="switchDays(1)">Monday</span>
+    <span [class.selected]="curDay === 2" (click)="switchDays(2)">Tuesday</span>
+    <span [class.selected]="curDay === 3" (click)="switchDays(3)">Wednesday</span>
+    <span [class.selected]="curDay === 4" (click)="switchDays(4)">Thursday</span>
+    <span [class.selected]="curDay === 5" (click)="switchDays(5)">Friday</span>
+    <span [class.selected]="curDay === 6" (click)="switchDays(6)">Saturday</span>
+    <span [class.selected]="curDay === 0" (click)="switchDays(0)">Sunday</span>
+  </div>
+  <div class="weather-info">
 
-<div class="week">
-  <span>Monday</span>
-  <span>Tuesday</span>
-  <span>Wednesday</span>
-  <span>Thursday</span>
-  <span>Friday</span>
-  <span>Saturday</span>
-  <span>Sunday</span>
+  </div>
+
 </div>
-<div class="weather-info"></div>

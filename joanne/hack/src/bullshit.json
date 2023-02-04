@@ -1,0 +1,19 @@
+{
+    "data": [
+        {
+            "wind_cdir": "NE",
+            "temp": 24.19,
+            "app_temp": 24.25,
+            "wind_spd": 6.17,
+            "weather": {
+                "icon": "c03d",
+                "code": 803,
+                "description": "Broken clouds"
+            },
+            "uv": 2,
+            "city_name": "Raleigh",
+            "sunrise": "10:44",
+            "sunset": "23:47"
+        }
+    ]
+}
