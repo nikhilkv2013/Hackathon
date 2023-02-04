@@ -1,0 +1,30 @@
+@component {
+    background-color: aliceblue;
+    width: 100%;
+}
+
+.week {
+    margin-top: 50px;
+    width: 80%;
+    /* overflow: auto; */
+    position: relative;
+    align-items: stretch;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+}
+
+span {
+        background-color: blue;
+        display: table-cell;
+        display: inline-block;
+        text-align: center;
+        width: 14%;
+        top: 30%;
+        position: relative;
+    }
+
+.weather-info {
+    background-color: blue;
+    position: relative;
+}
