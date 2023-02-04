@@ -7,10 +7,14 @@ import { Input } from '@angular/core';
   styleUrls: ['./forecast.component.css']
 })
 export class ForecastComponent {
+  days : string[] = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   d = new Date();
-  curDay: number = this.d.getDay(); 
+  today: number = this.d.getDay();
+  curDay: number = this.today; 
+  // day: string = this.days[this.curDay];
 
   switchDays(day: number) {
     this.curDay = day;
+    // this.day = this.days[day];
   }
 }

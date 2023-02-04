@@ -13,10 +13,10 @@
     padding: 0;
 }
 
-span {
+.day {
     display: inline-block;
     text-align: center;
-    width: 12%;
+    width: 11%;
     color: #704e17;
     position: relative;
     padding: 20px;
@@ -24,14 +24,15 @@ span {
     /* box-shadow: 7px 7px rgb(222, 224, 222); */
     }
 
-    span.selected {
+    .day.selected {
         border-radius: 10px;
         border-bottom: none;
         /* border-top: 7px solid #ddc7aa; */
+        height: 24px;
         background-color: #eee5d0;
-        border-left: 3px dashed #e2d8c0;    
-        border-right: 3px dashed #e2d8c0;    
-        border-top: 3px dashed #e2d8c0;    
+        border-left: 4px dashed #e2d8c0;    
+        border-right: 4px dashed #e2d8c0;    
+        border-top: 4px dashed #e2d8c0;    
         border-bottom-left-radius:0;
         border-bottom-right-radius:0;
         /* box-sizing: border-box; */
@@ -40,8 +41,19 @@ span {
 .weather-info {
     background-color: blue;
     position: relative;
-    width: 99%;
-    top: 216px;
-    height: 500px;
+    width: 95%;
+    top: 214px;
+    height: 650px;
     margin: auto;
+
+    border-radius: 10px;
+    /* border-top: 7px solid #ddc7aa; */
+    background-color: #eee5d0;
+    border: 4px dashed #e2d8c0;
+    /* border-left: 4px dashed #e2d8c0;    
+    border-right: 4px dashed #e2d8c0;    
+    border-bottom: 4px dashed #e2d8c0;     */
+    /* border-bottom-left-radius:0;
+    border-bottom-right-radius:0; */
+    overflow: auto;
 }
