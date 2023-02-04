@@ -2,12 +2,13 @@
 <html>
     <script>
         const Http = new XMLHttpRequest();
-        const url='http://api.weatherbit.io/v2.0/current?key=63905b681ef44e068d0331081d44c8e8&postal_code=50010'
+        const url='http://api.weatherbit.io/v2.0/forecast/hourly?key=63905b681ef44e068d0331081d44c8e8&postal_code=50010&hours=168'
         Http.open("GET", url);
         Http.send();
 
         Http.onreadystatechange = (e) => {
-            console.log(Http.responseText)
+            const apiQuery = JSON.parse(Http.responseText);
+            console.log(apiQuery.data[0].weather.description)
         }
     </script>
 </html>
